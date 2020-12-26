@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Inter Regular'), local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Inter-Regular.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Inter-Medium.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: local('Inter SemiBold'), local('Inter-SemiBold'),
+        url('../fonts/Inter-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Inter-SemiBold.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 350;
+  font-display: fallback;
+  src: local('Avenir Book'), local('Avenir-Book'),
+        url('../fonts/Avenir-Book.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Avenir-Book.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('../fonts/Avenir-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Avenir-Regular.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('PlayfairDisplay Regular'), local('PlayfairDisplay-Regular'),
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('PlayfairDisplay Bold'), local('PlayfairDisplay-Bold'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('SFUIDisplay Bold'), local('SFUIDisplay-Bold'),
+        url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFUIDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+}

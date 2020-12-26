@@ -1,0 +1,105 @@
+.contacts-block {
+	padding-top: 148px;
+	padding-bottom: 164px;
+	background-color: #FAFAF5;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__content-block {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	&__content-block &__photo-block {
+		display: none;
+	}
+	&__content-text {
+		display: block;
+		width: 100%;
+		max-width: 464px;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: rgba(28, 30, 40, 0.8);
+		margin-bottom: 160px;
+		p span {
+			font-weight: 600;
+		}
+	}
+	&__download-block {
+		position: relative;
+		display: block;
+	}
+	&__download-title {
+		display: block;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 500;
+		color: rgba(28, 30, 40, 0.8);
+		margin-bottom: 13px;
+	}
+	&__download-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__download-apple-link, &__download-google-link {
+		display: block;
+		width: 125px;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.contacts-block {
+		padding-top: 38px;
+		padding-bottom: 95px;
+		&__content-text {
+			font-size: 20px;
+			margin-bottom: 97px;
+			p {
+				margin: 0;
+			}
+			p:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		&__photo-block {
+			display: none;
+		}
+		&__content-block &__photo-block {
+			display: block;
+			margin-bottom: 86px;
+		}
+		&__content-block &__photo-block svg {
+			display: block;
+			margin: 0 auto;
+		}
+		&__download-title {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.contacts-block {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		&__content-text {
+			font-size: 20px;
+			max-width: 390px;
+		}
+		&__download-title {
+			font-size: 20px;
+		}
+	}
+}

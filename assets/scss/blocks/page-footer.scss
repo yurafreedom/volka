@@ -1,0 +1,132 @@
+.page-footer {
+	padding-top: 85px;
+	padding-bottom: 61px;
+	background-color: #404347;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__info-block {
+		position: relative;
+		display: block;
+	}
+	&__copyright-text {
+		display: block;
+		font-family: 'Avenir', sans-serif;
+		font-size: 18px;
+		font-weight: 350;
+		line-height: 1.2;
+		color: #fff;
+		letter-spacing: 0.16px;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+		}
+	}
+	&__info-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__policy-link, &__terms-link {
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.2;
+		color: #fff;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	&__policy-link {
+		margin-right: 30px;
+	}
+	&__contacts-block {
+		position: relative;
+		display: block;
+	}
+	&__contacts-title {
+		display: block;
+		font-family: 'Avenir', sans-serif;
+		font-size: 18px;
+		font-weight: 350;
+		line-height: 1.2;
+		letter-spacing: 0.16px;
+		text-transform: capitalize;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	&__contacts-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__facebook-link {
+		display: block;
+		margin-right: 34px;
+	}
+	&__instagram-link {
+		display: block;
+	}
+}
+
+@include for-size(mobile) {
+	.page-footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		&__contacts-title {
+			font-size: 8px;
+		}
+		&__copyright-text {
+			font-size: 8px;
+		}
+		&__info-wrapper {
+			display: block;
+		}
+		&__policy-link {
+			margin-bottom: 5px;
+		}
+		&__policy-link, &__terms-link {
+			font-size: 10px;
+		}
+		&__facebook-link {
+			margin-right: 15px;
+		}
+		&__facebook-link svg {
+			width: 6px;
+			height: 14px;
+		}
+		&__instagram-link svg {
+			width: 11px;
+			height: 12px;
+		} 
+	}
+}
+
+@include for-size(tablet) {
+	.page-footer {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__copyright-text {
+			font-size: 16px;
+		}
+		&__policy-link, &__terms-link {
+			font-size: 16px;
+		}
+		&__contacts-title {
+			font-size: 16px;
+		}
+	}
+}
