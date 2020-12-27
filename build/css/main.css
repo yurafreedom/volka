@@ -411,7 +411,7 @@ template {
   color: #4140A3;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out; }
-  .btn--download:hover {
+  .btn--download:hover, .btn--download:focus {
     background-color: #4140A3;
     border-color: #4140A3;
     color: #fff; }
@@ -773,8 +773,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 
 @media (max-width: 767px) {
   .main-block {
-    padding-top: 86px;
-    padding-bottom: 63px; }
+    padding-top: 35px;
+    padding-bottom: 60px; }
     .main-block__wrapper {
       -ms-flex-direction: column;
           flex-direction: column; }
@@ -785,7 +785,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
       -ms-flex-order: 1;
           order: 1;
       max-width: 100%;
-      margin-bottom: 106px; }
+      margin-bottom: 60px; }
     .main-block__content-title {
       font-size: 34px;
       margin-bottom: 35px; }
@@ -805,6 +805,12 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
   .main-block__content-title span svg {
     width: 230px;
     top: 0; } }
+
+@media screen and (min-width: 920px) and (max-width: 1199px) {
+  .main-block__photo-block {
+    max-width: 500px; }
+  .main-block__content-title {
+    font-size: 40px; } }
 
 .page-header {
   background-color: #FAFAF5; }
@@ -892,7 +898,11 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     pointer-events: all;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
-  .page-header__menu-nav ul {
+  .page-header__menu .page-header__nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -903,12 +913,13 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     text-align: center;
     letter-spacing: 0.75px;
     text-transform: uppercase; }
-  .page-header__menu-nav ul li:not(:last-child) {
-    margin-bottom: 55px; }
-  .page-header__menu-nav ul li a {
+  .page-header__menu .page-header__nav ul li:not(:last-child) {
+    margin-bottom: 55px;
+    margin-right: 0; }
+  .page-header__menu .page-header__nav ul li a {
     color: #fff;
     transition: all 0.3s ease-in-out; }
-    .page-header__menu-nav ul li a:hover {
+    .page-header__menu .page-header__nav ul li a:hover {
       text-decoration: none; }
   .page-header__menu .page-header__toggle {
     position: absolute;

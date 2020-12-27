@@ -62,8 +62,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 
 @include for-size(mobile) {
 	.main-block {
-		padding-top: 86px;
-		padding-bottom: 63px;
+		padding-top: 35px;
+		padding-bottom: 60px;
 		&__wrapper {
 			flex-direction: column;
 		}
@@ -73,7 +73,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 		&__photo-block {
 			order: 1;
 			max-width: 100%;
-			margin-bottom: 106px;
+			margin-bottom: 60px;
 		}
 		&__content-title {
 			font-size: 34px;
@@ -104,8 +104,13 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-
+@media screen and (min-width: 920px) and (max-width: 1199px) {
+	.main-block__photo-block {
+		max-width: 500px;
+	}
+	.main-block__content-title {
+		font-size: 40px;
+	}
 }
 
 @media screen and (min-width: 1200px) {

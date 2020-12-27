@@ -81,7 +81,9 @@
 		pointer-events: all;
 		transform: translateX(0);
 	}
-	&__menu-nav ul {
+	&__menu &__nav ul {
+		display: flex;
+		flex-direction: column;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -93,10 +95,11 @@
 		letter-spacing: 0.75px;
 		text-transform: uppercase;
 	}
-	&__menu-nav ul li:not(:last-child) {
+	&__menu &__nav ul li:not(:last-child) {
 		margin-bottom: 55px;
+		margin-right: 0;
 	}
-	&__menu-nav ul li a {
+	&__menu &__nav ul li a {
 		color: #fff;
 		transition: all 0.3s ease-in-out;
 		&:hover {

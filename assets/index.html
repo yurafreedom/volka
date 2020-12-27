@@ -6,7 +6,7 @@
 @@include('template/page-header.html')
 
 
-<section class="main-block">
+<section class="main-block" id="home">
 	<div class="container">
 		<div class="main-block__wrapper">
 			<div class="main-block__content-block">
@@ -14,14 +14,14 @@
 					International calling.
 					<span>Simplified. <svg width="325" height="84"><use xlink:href="#title_figure"></use></svg></span>
 				</div>
-				<a href="javascript:;" class="btn btn--download">Download</a>
+				<a href="javascript:;" class="btn btn--download" data-toggle="anchor" data-target="#download">Download</a>
 			</div>
 			<div class="main-block__photo-block"><img src="img/header_illustration.png" alt=""></div>
 		</div>
 	</div>
 </section>
 
-<section class="different-block">
+<section class="different-block" id="features">
 	<div class="container">
 
 		<div class="different-block__title">Why <span>Volka</span> is different?</div>
@@ -97,7 +97,7 @@
 	</div>
 </section>
 
-<section class="contacts-block">
+<section class="contacts-block" id="download">
 	<div class="container">
 		<div class="contacts-block__wrapper">
 			<div class="contacts-block__content-block">
@@ -116,7 +116,7 @@
 						<a href="https://apps.apple.com/us/app/volka-calls-abroad/id1534413831" class="contacts-block__download-apple-link">
 							<img src="img/icon-appstore.png" alt="">
 						</a>
-						<a href="https://volkaapp.com/api/android/preregister" class="contacts-block__download-google-link">
+						<a href="javascript:;" class="contacts-block__download-google-link" data-toggle="modal" data-target="#popup_email">
 							<img src="img/icon-google-play.png" alt="">
 						</a>
 					</div>

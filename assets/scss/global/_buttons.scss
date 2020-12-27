@@ -52,7 +52,7 @@
   color: #4140A3;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
-  &:hover {
+  &:hover, &:focus {
     background-color: #4140A3;
     border-color: #4140A3;
     color: #fff;
