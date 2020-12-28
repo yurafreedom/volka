@@ -130,30 +130,30 @@ $('.page-header__menu .page-header__nav ul li a').on('click', function() {
 	$('.page-header__menu').removeClass('active');
 });
 
-// $('#ajax_form').on('submit', function(){
+$('#ajax_form').on('submit', function(){
 
-// 	var http = new XMLHttpRequest();
-// 	var url  = 'https://volkaapp.com/api/android/preregister';
+	var http = new XMLHttpRequest();
+	var url  = 'https://volkaapp.com/api/android/preregister';
 
-// 	var params   = new Object();
-// 	params.email = $('#popup_email');
+	var params   = new Object();
+	params.email = $('#input_email');
 
-// 	let urlEncodedData = "", urlEncodedDataPairs = [], name;
-// 	for( name in params ) {
-// 		urlEncodedDataPairs.push(encodeURIComponent(name)+'='+encodeURIComponent(params[name]));
-// 	}
+	let urlEncodedData = "", urlEncodedDataPairs = [], name;
+	for( name in params ) {
+		urlEncodedDataPairs.push(encodeURIComponent(name)+'='+encodeURIComponent(params[name]));
+	}
 
-// 	http.open('POST', url, true);
-// 	http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-// 	http.onreadystatechange = function() {
-// 		if(http.readyState == 4 && http.status == 200) { // тот самый ответ 200
-// 			alert(http.responseText);
-// 			// Если ответ 200 ОК - показываем следующий pop up
-// 		}
-// 	}
+	http.open('POST', url, true);
+	http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	http.onreadystatechange = function() {
+		if(http.readyState == 4 && http.status == 200) { // тот самый ответ 200
+			alert(http.responseText);
+			// Если ответ 200 ОК - показываем следующий pop up
+		}
+	}
 
-// 	http.send(params);
-// });
+	http.send(params);
+});
 
 
 function checkParams() {
