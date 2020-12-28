@@ -60,6 +60,7 @@
 }
 
 .btn--sign {
+  pointer-events: all;
   border: 0;
   width: 100%;
   max-width: 290px;
@@ -75,6 +76,7 @@
 }
 
 .btn--sign.disabled {
+  pointer-events: none;
   background-color: #F5F3F3;
   color: rgba(69, 83, 87, 0.3);
 }
