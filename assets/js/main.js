@@ -126,26 +126,31 @@ $("#menu-toggle-active").click(function(e) {
   $("#header-menu").removeClass("active");
 });
 
-// var $things = $(".nav-block");
-
-// $things.waypoint(function(e) {
-//     if ("down" === e) {
-//         var t = this.element.id;
-//         $(".page-header__nav a").removeClass("active"), $('[data-target="#' + t + '"]').addClass("active")
-//     }
-// }, {
-//     offset: 151
-// }), 
-
-// $things.waypoint(function(e) {
-//     if ("up" === e) {
-//         var t = this.element.id;
-//         $(window).scrollTop() < $(window).height() - 100 ? $(".page-header__nav a").removeClass("active") : ($(".page-header__nav a").removeClass("active"), $('[data-target="#' + t + '"]').addClass("active"))
-//     }
-// }, {
-//     offset: 149
-// });
-
 $('.page-header__menu .page-header__nav ul li a').on('click', function() {
 	$('.page-header__menu').removeClass('active');
+});
+
+$('#ajax_form').on('submit', function(){
+
+	var http = new XMLHttpRequest();
+	var url  = 'https://volkaapp.com/api/android/preregister';
+
+	var params   = new Object();
+	params.email = $('#popup_email');
+
+	let urlEncodedData = "", urlEncodedDataPairs = [], name;
+	for( name in params ) {
+		urlEncodedDataPairs.push(encodeURIComponent(name)+'='+encodeURIComponent(params[name]));
+	}
+
+	http.open('POST', url, true);
+	http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	http.onreadystatechange = function() {
+		if(http.readyState == 4 && http.status == 200) { // тот самый ответ 200
+			alert(http.responseText);
+			// Если ответ 200 ОК - показываем следующий pop up
+		}
+	}
+
+	http.send(params);
 });

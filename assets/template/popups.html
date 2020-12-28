@@ -2,13 +2,14 @@
 	<div class="popup-block__overlay">
 		<div class="popup-block__popup">
 			<div class="popup-block__email-block">
-				<form action="send.php" method="post" class="popup-block__email-form">
+				<form action="/" method="POST" class="popup-block__email-form" id="ajax_form">
 					<label for="popup_email" class="popup-block__email-title">Please Enter Your Email</label>
 					<div class="popup-block__input-wrapper">
 						<input type="email" name="email" id="popup_email" class="form-control popup-block__email-input" placeholder="sara.12@gmail.co|" required>
 					</div>
 					<button type="submit" class="btn btn--sign" data-toggle="modal" data-target="#popup_thanks">Sign up</button>
 				</form>
+				<div id="result_form"></div>
 			</div>
 		</div>
 	</div>
