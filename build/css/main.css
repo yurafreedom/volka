@@ -764,7 +764,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
     -ms-flex-order: 2;
         order: 2;
     width: 100%;
-    max-width: 600px; }
+    max-width: 600px;
+    height: 542px; }
     .main-block__photo-block img {
       display: block;
       width: 100%;
@@ -785,6 +786,7 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
       -ms-flex-order: 1;
           order: 1;
       max-width: 100%;
+      height: 344px;
       margin-bottom: 60px; }
     .main-block__content-title {
       font-size: 34px;
@@ -796,7 +798,8 @@ body.scroll-top-active.scrolled .main-block__steps-button-wrapper {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-block__photo-block {
-    max-width: 300px; }
+    max-width: 300px;
+    height: 300px; }
   .main-block {
     padding-top: 75px;
     padding-bottom: 75px; }
